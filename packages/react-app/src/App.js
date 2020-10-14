@@ -107,6 +107,11 @@ function App() {
       {networkBanner}
 
     </div>
+    <Faucet
+      localProvider={kovanProvider}
+      placeholder={"sidechain faucet"}
+      price={price}
+    />
       <Switch>
         <Route path="/">
           <NftyWallet
@@ -168,11 +173,7 @@ function App() {
                 ) : (
                   <>
                     <Col>
-                      <Faucet
-                        localProvider={kovanProvider}
-                        placeholder={"sidechain faucet"}
-                        price={price}
-                      />
+
                     </Col>
                   </>
                 )}
